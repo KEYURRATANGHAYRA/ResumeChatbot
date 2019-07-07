@@ -1,4 +1,4 @@
-# Resume chatbot build with Python, Flask and DialogFlow
+# Resume chatbot built with Python, Flask and DialogFlow
 
 Check out the [demo](http://bot.lenashakurova.ru/)!
 
