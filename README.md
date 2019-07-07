@@ -1,5 +1,7 @@
 # Resume chatbot build with Python, Flask and DialogFlow
 
+Check out the [demo](http://bot.lenashakurova.ru/)!
+
 ## What to do when you have already trained your chatbot in DialogFlow environment and you want to create a Flask app?
 
 If you already have trained your DialogFlow agent and now want to create a simple Web Application that sends requests to your DialogFlow agent, this guide is for you.
@@ -40,9 +42,7 @@ python app.py
 ## Demo
 This is how my ResumeBot looks like:
 <div align="middle">
-<img src="./images/demo1.png" width="250">  
+<img src="./images/demo1.png" width="300">  
 <br>
-<img src="./images/demo2.png" width="250">  
-<br>
-<img src="./images/demo3.png" width="251">  
+<img src="./images/demo2.png" width="300">  
 </div>
