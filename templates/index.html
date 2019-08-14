@@ -24,7 +24,7 @@
           <div>
 
             <div id="chatbox">
-              <div class="botBox">
+              <div class="botBox z-depth-1-half">
                 <p class="botText"><span>👋 Hi! I'm ResumeBot, you can ask me questions about Lena Shakurova and I'll try to do my best to answer you!</span></p>
               </div>
               <br>
@@ -41,14 +41,14 @@
             <script>
               function getBotResponse() {
                 var rawText = $("#textInput").val();
-                var userHtml = '<div class="d-flex justify-content-end mb-4"><div class="userBox"><p class="userText"><span>' + rawText + "</span></p></div></div><br>";
+                var userHtml = '<div class="d-flex justify-content-end mb-4"><div class="userBox z-depth-1-half"><p class="userText"><span>' + rawText + "</span></p></div></div><br>";
                 $("#textInput").val("");
                 $("#chatbox").append(userHtml);
                 document
                   .getElementById("userInput")
                   .scrollIntoView({ block: "start", behavior: "smooth" });
                 $.get("/get", { msg: rawText }).done(function(data) {
-                  var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="botBox"><p class="botText"><span>' + data + "</span></p></div></div><br>";
+                  var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="botBox z-depth-1-half"><p class="botText"><span>' + data + "</span></p></div></div><br>";
                   $("#chatbox").append(botHtml);
                   document
                     .getElementById("userInput")
