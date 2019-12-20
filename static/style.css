@@ -28,7 +28,7 @@ h3 {
 }
 
 #mainChatbot {
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   flex-grow: 1;
   display: flex;
