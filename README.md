@@ -36,7 +36,7 @@ project_id = 'YOUR_PROJECT_ID'
 #### 3. Run your app
 - Run your Flask app:
 ```
-python app.py
+python __init__.py
 ```
 
 ## Demo
