@@ -32,5 +32,6 @@ def detect_intent(project_id, text, session_id=str(uuid.uuid4()), language_code=
     detected_intent_confidence = response.query_result.intent_detection_confidence
     fulfillment_text = response.query_result.fulfillment_text
 
+    print(fulfillment_text)
     print('Session id', session_id)
     return fulfillment_text

@@ -13,7 +13,9 @@ from utils import detect_intent
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = google_credentials
 
-app = Flask(__name__)
+template_dir = os.path.abspath('./dist/')
+static_dir = os.path.abspath('./dist/assets/')
+app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 
 logger = logging.getLogger('logtest')
 logger.setLevel(logging.INFO)
