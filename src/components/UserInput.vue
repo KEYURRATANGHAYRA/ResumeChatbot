@@ -26,7 +26,7 @@ export default {
       this.$emit("addMessage", { text: message, sender: "user" });
 
       fetch(`/get?msg=${message}`)
-        .then(response => response.json())
+        .then(response => response.text())
         .then(botMessage => {
           this.$emit("addMessage", { text: botMessage, sender: "bot" });
         });

@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-5 flex justify-end">
+  <div :class="{'mb-5 flex justify-end': message.sender === 'user', 'mb-5 flex': message.sender === 'bot'}">
     <div
       class="p-4 rounded-lg"
       :class="{
