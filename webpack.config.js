@@ -20,7 +20,7 @@ module.exports = {
     main: "./src/main.js",
   },
   output: {
-    filename: "./[name].[chunkhash].js",
+    filename: "./assets/[name].[chunkhash].js",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
@@ -53,10 +53,10 @@ module.exports = {
     new VueLoaderPlugin(),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "style.[chunkhash].css",
+      filename: "./assets/style.[chunkhash].css",
     }),
     new HtmlWebpackPlugin({
-      template: "static/index.html",
+      template: "index.html",
     }),
   ],
 };
