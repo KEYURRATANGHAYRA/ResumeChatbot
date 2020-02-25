@@ -105,4 +105,6 @@ venv.bak/
 
 # Project files
 *.json
+!package.json
 config.py
+node_modules
