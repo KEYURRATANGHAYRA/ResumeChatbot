@@ -5,6 +5,7 @@
       @keyup.enter="getBotResponse()"
       v-model="userMessage"
       name="message"
+      autofocus
       placeholder="Your message..."
     />
   </div>

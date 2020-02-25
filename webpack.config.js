@@ -2,8 +2,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
-const TerserJSPlugin = require('terser-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserJSPlugin = require("terser-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -44,13 +44,7 @@ module.exports = {
         use: [
           { loader: MiniCssExtractPlugin.loader },
           { loader: "css-loader" },
-          {
-            loader: "postcss-loader",
-            options: {
-              ident: "postcss",
-              plugins: [require("tailwindcss"), require("autoprefixer")],
-            },
-          },
+          { loader: "postcss-loader" },
         ],
       },
     ],
