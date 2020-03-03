@@ -7,7 +7,8 @@
         'lg:ml-24 md:ml-12 sm:ml-12 bg-blue-200': message.sender === 'user',
       }"
     >
-      <span class="text-lg">{{ message.text }}</span>
+      <span v-if="message.sender === 'user'" class="text-lg">{{ message.text }}</span>
+      <span v-else v-html="message.text" class="text-lg"></span>
     </div>
   </div>
 </template>
